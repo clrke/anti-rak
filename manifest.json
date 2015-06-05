@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "Anti-Rak for Facebook",
+  "description": "Chrome plugin that removes the 'Post' button to prevent raking.",
+  "version": "1.0",
+
+  "permissions": [
+    "https://www.facebook.com/ark.eidolon",
+    "https://www.facebook.com/*"
+  ],
+  "content_scripts": [{
+    "matches": [
+      "https://www.facebook.com/*"
+    ],
+    "js": [
+      "lib/jquery.min.js",
+      "app.js"
+    ],
+    "run_at": "document_end"
+  }]
+}
