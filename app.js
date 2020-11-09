@@ -1,1 +1,1 @@
-$("body").remove();
+document.querySelector('body').innerHTML = '<div style="width: 100vw; height: 100vh; align-items: center; text-align: center; justify-content: center; display: flex; color: white; background-color: black; margin: auto; font-size: 24px;"><p>You have been hacked. Kindly ask Clarke to unlock this website.</p></div>'

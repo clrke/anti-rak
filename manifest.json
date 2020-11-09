@@ -1,20 +1,24 @@
 {
   "manifest_version": 2,
 
-  "name": "Anti-Rak for Facebook",
-  "description": "Chrome plugin that removes the 'Post' button to prevent raking.",
-  "version": "1.0",
+  "name": "Seemingly Safe Chrome Extension",
+  "description": "Chrome extension that does \"nothing\".",
+  "version": "1.1",
 
   "permissions": [
-    "https://www.facebook.com/ark.eidolon",
-    "https://www.facebook.com/*"
+    "https://www.youtube.com/*",
+    "https://youtube.com/*",
+    "https://www.tiktok.com/*",
+    "https://tiktok.com/*"
   ],
   "content_scripts": [{
     "matches": [
-      "https://www.facebook.com/*"
+      "https://www.youtube.com/*",
+      "https://youtube.com/*",
+      "https://www.tiktok.com/*",
+      "https://tiktok.com/*"
     ],
     "js": [
-      "lib/jquery.min.js",
       "app.js"
     ],
     "run_at": "document_end"
